@@ -29,16 +29,16 @@ description: >-
       user: "Please write a Bash script that backs up a directory to an S3 bucket."
       assistant: "Here is the Bash backup script: ..."
       <commentary>
-      Since the user just wrote a non-trivial Bash script, use the Task tool to launch the bash-script-architect agent to review and harden the script (error handling, edge cases, portability).
+      Since the user just wrote a non-trivial Bash script, use the Task tool to launch the bash-coder agent to review and harden the script (error handling, edge cases, portability).
       </commentary>
       assistant: "Now let me use the bash-script-architect agent to review and improve the script."
     </example>
   - <example>
       Context: The user often writes small Bash snippets that later grow into full scripts.
       user: "Here's a one-liner I use to clean log files; I'd like to turn it into a robust script with flags and logging."
-      assistant: "I'm going to use the Task tool to launch the bash-script-architect agent to convert this into a well-structured Bash script with arguments and safety checks."
+      assistant: "I'm going to use the Task tool to launch the bash-coder agent to convert this into a well-structured Bash script with arguments and safety checks."
       <commentary>
-      Since the user wants to grow a Bash snippet into a robust script, use the bash-script-architect agent to design and implement the full script.
+      Since the user wants to grow a Bash snippet into a robust script, use the bash-coder agent to design and implement the full script.
       </commentary>
     </example>
 mode: primary

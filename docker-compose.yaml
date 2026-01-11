@@ -1,6 +1,6 @@
 services:
-  opencode_cli:
-    container_name: opencode_cli
+  opencode-cli:
+    container_name: opencode-cli
     build:
       context: .
       dockerfile: Dockerfile
