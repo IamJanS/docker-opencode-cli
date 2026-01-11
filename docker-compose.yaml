@@ -1,0 +1,15 @@
+services:
+  opencode_cli:
+    container_name: opencode_cli
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: opencode_cli:latest
+    user: ethos
+    environment:
+      DISPLAY: ${DISPLAY} # Needed for opencode and xclip to work
+    volumes:
+      - ./vol:/home/ethos
+      - /tmp/.X11-unix:/tmp/.X11-unix # Needed for opencode and xlip to work
+    tty: true
+    stdin_open: true
