@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: opencode_cli:latest
+    image: opencode-cli:latest
     user: ethos
     environment:
       DISPLAY: ${DISPLAY} # Needed for opencode and xclip to work
